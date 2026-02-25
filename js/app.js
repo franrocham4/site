@@ -1,60 +1,18 @@
 /**
  * UsecoelhoBr – app.js
- * Landing page: FAQ accordion, hamburger menu e injeção de links da loja.
+ * Redirecionamento imediato para a loja Nuvemshop.
+ * A URL é definida em js/config.js (NUVEMSHOP_URL).
  */
 
-/* =============================================
-   LINKS DA LOJA (Nuvemshop)
-   Lê NUVEMSHOP_URL definido em js/config.js e
-   preenche todos os elementos com class="store-link".
-   ============================================= */
-function initStoreLinks() {
-  const base = (typeof NUVEMSHOP_URL !== 'undefined') ? NUVEMSHOP_URL : '#';
-  document.querySelectorAll('.store-link').forEach(el => {
-    const path = el.dataset.storePath || '';
-    el.href = base + path;
-    el.target = '_blank';
-    el.rel = 'noopener';
-  });
-}
+(function () {
+  var url = (typeof NUVEMSHOP_URL !== 'undefined') ? NUVEMSHOP_URL : null;
 
-/* =============================================
-   FAQ
-   ============================================= */
-function initFAQ() {
-  document.querySelectorAll('.faq-item').forEach(item => {
-    item.querySelector('.faq-question')?.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-}
+  if (url) {
+    /* Atualiza o href do botão e link de meta refresh */
+    var btn = document.getElementById('store-btn');
+    if (btn) btn.href = url;
 
-/* =============================================
-   HAMBURGER MENU
-   ============================================= */
-function initHamburger() {
-  const ham = document.querySelector('.hamburger');
-  const nav = document.querySelector('.nav-links');
-  if (!ham || !nav) return;
-  ham.addEventListener('click', () => {
-    const expanded = ham.getAttribute('aria-expanded') === 'true';
-    ham.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('open');
-  });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    nav.classList.remove('open');
-    ham.setAttribute('aria-expanded', 'false');
-  }));
-}
-
-/* =============================================
-   INIT
-   ============================================= */
-document.addEventListener('DOMContentLoaded', () => {
-  initStoreLinks();
-  initFAQ();
-  initHamburger();
-});
-
+    /* Redirecionamento via JS – redundância com meta refresh */
+    window.location.replace(url);
+  }
+}());
