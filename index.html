@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UsecoelhoBr – Moda masculina minimalista. Camisetas premium, básicas e atemporais." />
+  <title>UsecoelhoBr | Moda Masculina</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">UsecoelhoBr</a>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="#colecao">Coleção</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="cart-btn" id="open-cart-btn" aria-label="Abrir carrinho">
+          🛒 Carrinho <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container">
+      <h1>Vista o essencial.<br>Viva o estilo.</h1>
+      <p>Camisetas básicas masculinas de qualidade premium — simples, versáteis e atemporais.</p>
+      <a href="#colecao" class="btn">Ver Coleção</a>
+    </div>
+  </section>
+
+  <!-- ===================== COLEÇÃO ===================== -->
+  <section id="colecao">
+    <div class="container">
+      <h2>Coleção</h2>
+      <div class="products-grid" id="products-grid">
+        <!-- Produtos renderizados via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFÍCIOS ===================== -->
+  <section id="beneficios">
+    <div class="container">
+      <h2>Por que UsecoelhoBr?</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">👕</div>
+          <h3>Qualidade Premium</h3>
+          <p>Tecidos selecionados para máximo conforto e durabilidade.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🎨</div>
+          <h3>Cores Exclusivas</h3>
+          <p>Paleta minimalista para combinar com qualquer look.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">📦</div>
+          <h3>Entrega Rápida</h3>
+          <p>Enviamos para todo o Brasil com agilidade e segurança.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">↩️</div>
+          <h3>Troca Fácil</h3>
+          <p>Não ficou bom? Trocamos sem complicação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq">
+    <div class="container">
+      <h2>Perguntas Frequentes</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Como faço meu pedido? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Escolha o produto, selecione a cor e o tamanho, adicione ao carrinho e clique em "Finalizar Pedido". Após preencher seus dados, você será redirecionado ao WhatsApp para confirmar o pedido.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Quais são os tamanhos disponíveis? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Trabalhamos com P, M, G e GG. Consulte nossa tabela de medidas pelo WhatsApp para garantir o tamanho ideal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Qual o prazo de entrega? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>O prazo varia de 5 a 10 dias úteis, dependendo da sua região. Entregamos para todo o Brasil.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Quais formas de pagamento são aceitas? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Aceitamos Pix, transferência bancária e cartão de crédito/débito. Os detalhes são combinados via WhatsApp após o pedido.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Posso trocar o produto? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Aceitamos trocas em até 7 dias após o recebimento, desde que o produto esteja sem uso e com a etiqueta original. Entre em contato pelo WhatsApp.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section id="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <p>Dúvidas, pedidos ou sugestões? Estamos aqui para te atender.</p>
+      <div class="contact-links">
+        <a href="https://wa.me/5511956852081" target="_blank" rel="noopener">
+          💬 WhatsApp
+        </a>
+        <a href="https://instagram.com/usecoelhobr" target="_blank" rel="noopener">
+          📷 @usecoelhobr
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>© 2025 UsecoelhoBr · Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ===================== CART DRAWER ===================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras">
+    <div class="cart-header">
+      <h3>Meu Carrinho</h3>
+      <button class="close-cart-btn" id="close-cart-btn" aria-label="Fechar carrinho">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Seu carrinho está vazio.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cart-subtotal-value">R$ 0,00</span>
+      </div>
+      <a href="checkout.html" class="checkout-link">Finalizar Pedido →</a>
+    </div>
+  </aside>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
