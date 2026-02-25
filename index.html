@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="UsecoelhoBr – Moda masculina minimalista. Camisetas premium, básicas e atemporais." />
-  <title>UsecoelhoBr | Moda Masculina</title>
+  <meta name="description" content="UsecoelhoBr – Moda masculina minimalista premium. Explore nossas coleções e compre na nossa loja." />
+  <title>UsecoelhoBr | Moda Masculina Minimalista</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -15,67 +15,143 @@
       <a href="index.html" class="brand">UsecoelhoBr</a>
 
       <nav class="nav-links" id="main-nav">
-        <a href="#colecao">Coleção</a>
-        <a href="#beneficios">Benefícios</a>
+        <a href="#colecoes">Coleções</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#sobre">Sobre</a>
         <a href="#faq">FAQ</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <div style="display:flex;align-items:center;gap:0.75rem;">
+      <div class="header-actions">
         <button class="hamburger" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
-        <button class="cart-btn" id="open-cart-btn" aria-label="Abrir carrinho">
-          🛒 Carrinho <span class="cart-count">0</span>
-        </button>
+        <a href="#" class="btn-store store-link" aria-label="Ir para a loja">
+          Ir para a Loja →
+        </a>
       </div>
     </div>
   </header>
 
   <!-- ===================== HERO ===================== -->
   <section class="hero">
-    <div class="container">
-      <h1>Vista o essencial.<br>Viva o estilo.</h1>
-      <p>Camisetas básicas masculinas de qualidade premium — simples, versáteis e atemporais.</p>
-      <a href="#colecao" class="btn">Ver Coleção</a>
-    </div>
-  </section>
-
-  <!-- ===================== COLEÇÃO ===================== -->
-  <section id="colecao">
-    <div class="container">
-      <h2>Coleção</h2>
-      <div class="products-grid" id="products-grid">
-        <!-- Produtos renderizados via JS -->
+    <div class="hero-inner">
+      <img src="assets/hero.svg" alt="UsecoelhoBr – banner" class="hero-bg" />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Vista o essencial.<br>Viva o estilo.</h1>
+        <p>Camisetas básicas masculinas de qualidade premium — simples, versáteis e atemporais.</p>
+        <a href="#" class="btn hero-btn store-link">Comprar na Loja →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== BENEFÍCIOS ===================== -->
-  <section id="beneficios">
+  <!-- ===================== COLEÇÕES ===================== -->
+  <section id="colecoes">
     <div class="container">
-      <h2>Por que UsecoelhoBr?</h2>
-      <div class="benefits-grid">
-        <div class="benefit-item">
-          <div class="benefit-icon">👕</div>
-          <h3>Qualidade Premium</h3>
-          <p>Tecidos selecionados para máximo conforto e durabilidade.</p>
+      <h2>Coleções</h2>
+      <div class="collections-grid">
+
+        <div class="collection-card">
+          <div class="collection-img-wrap">
+            <img src="assets/collection-1.svg" alt="Coleção Básicos" loading="lazy" />
+          </div>
+          <div class="collection-info">
+            <h3>Básicos</h3>
+            <p>Peças essenciais para o dia a dia com acabamento premium.</p>
+            <a href="#" class="btn btn-outline store-link" data-store-path="/categoria/basicos">Ver Coleção →</a>
+          </div>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">🎨</div>
-          <h3>Cores Exclusivas</h3>
-          <p>Paleta minimalista para combinar com qualquer look.</p>
+
+        <div class="collection-card">
+          <div class="collection-img-wrap">
+            <img src="assets/collection-2.svg" alt="Coleção Minimalista" loading="lazy" />
+          </div>
+          <div class="collection-info">
+            <h3>Minimalista</h3>
+            <p>Paleta neutra e cortes limpos para um visual atemporal.</p>
+            <a href="#" class="btn btn-outline store-link" data-store-path="/categoria/minimalista">Ver Coleção →</a>
+          </div>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">📦</div>
-          <h3>Entrega Rápida</h3>
-          <p>Enviamos para todo o Brasil com agilidade e segurança.</p>
+
+        <div class="collection-card">
+          <div class="collection-img-wrap">
+            <img src="assets/collection-3.svg" alt="Coleção Premium" loading="lazy" />
+          </div>
+          <div class="collection-info">
+            <h3>Premium</h3>
+            <p>Tecidos selecionados para máximo conforto e durabilidade.</p>
+            <a href="#" class="btn btn-outline store-link" data-store-path="/categoria/premium">Ver Coleção →</a>
+          </div>
         </div>
-        <div class="benefit-item">
-          <div class="benefit-icon">↩️</div>
-          <h3>Troca Fácil</h3>
-          <p>Não ficou bom? Trocamos sem complicação.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DESTAQUES ===================== -->
+  <section id="destaques">
+    <div class="container">
+      <h2>Destaques</h2>
+      <div class="highlights-grid">
+
+        <div class="highlight-card">
+          <div class="highlight-img-wrap">
+            <img src="assets/products/camiseta-basic/preto.png" alt="Camiseta Basic Preto" loading="lazy" onerror="this.src='assets/placeholder.png'" />
+          </div>
+          <div class="highlight-info">
+            <h3>Camiseta Basic</h3>
+            <span class="highlight-tag">Mais Vendido</span>
+            <a href="#" class="btn highlight-cta store-link">Ver na Loja →</a>
+          </div>
         </div>
+
+        <div class="highlight-card">
+          <div class="highlight-img-wrap">
+            <img src="assets/products/camiseta-basic/offwhite.png" alt="Camiseta Basic Off-white" loading="lazy" onerror="this.src='assets/placeholder.png'" />
+          </div>
+          <div class="highlight-info">
+            <h3>Camiseta Basic Off-white</h3>
+            <span class="highlight-tag">Novo</span>
+            <a href="#" class="btn highlight-cta store-link">Ver na Loja →</a>
+          </div>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-img-wrap">
+            <img src="assets/products/camiseta-basic/verde.png" alt="Camiseta Basic Verde" loading="lazy" onerror="this.src='assets/placeholder.png'" />
+          </div>
+          <div class="highlight-info">
+            <h3>Camiseta Basic Verde</h3>
+            <span class="highlight-tag">Exclusivo</span>
+            <a href="#" class="btn highlight-cta store-link">Ver na Loja →</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="highlights-footer">
+        <a href="#" class="btn store-link">Ver Todos os Produtos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section id="sobre">
+    <div class="container sobre-inner">
+      <div class="sobre-text">
+        <h2>Sobre a UsecoelhoBr</h2>
+        <p class="sobre-lead">Uma marca criada para quem acredita que o estilo está nos detalhes — e na simplicidade.</p>
+        <p>Nascemos com uma missão clara: oferecer peças básicas masculinas com acabamento premium, durabilidade real e um visual atemporal que combina com qualquer ocasião.</p>
+        <p>Cada peça é pensada para ser versátil, confortável e sofisticada — do casual ao profissional.</p>
+        <div class="sobre-values">
+          <div class="value-item"><span class="value-icon">👕</span><span>Qualidade Premium</span></div>
+          <div class="value-item"><span class="value-icon">🎨</span><span>Cores Exclusivas</span></div>
+          <div class="value-item"><span class="value-icon">📦</span><span>Entrega Ágil</span></div>
+          <div class="value-item"><span class="value-icon">↩️</span><span>Troca Fácil</span></div>
+        </div>
+      </div>
+      <div class="sobre-img-wrap">
+        <img src="assets/sobre.svg" alt="UsecoelhoBr – Sobre a marca" loading="lazy" />
       </div>
     </div>
   </section>
@@ -91,16 +167,16 @@
             Como faço meu pedido? <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Escolha o produto, selecione a cor e o tamanho, adicione ao carrinho e clique em "Finalizar Pedido". Após preencher seus dados, você será redirecionado ao WhatsApp para confirmar o pedido.</p>
+            <p>Acesse nossa loja pela Nuvemshop pelo botão "Ir para a Loja", escolha o produto, selecione cor e tamanho e finalize a compra diretamente pela plataforma.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            Quais são os tamanhos disponíveis? <span class="faq-icon">+</span>
+            Quais tamanhos estão disponíveis? <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Trabalhamos com P, M, G e GG. Consulte nossa tabela de medidas pelo WhatsApp para garantir o tamanho ideal.</p>
+            <p>Trabalhamos com P, M, G e GG. Consulte a tabela de medidas na página do produto ou fale conosco pelo WhatsApp.</p>
           </div>
         </div>
 
@@ -118,16 +194,25 @@
             Quais formas de pagamento são aceitas? <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Aceitamos Pix, transferência bancária e cartão de crédito/débito. Os detalhes são combinados via WhatsApp após o pedido.</p>
+            <p>Aceitamos Pix, cartão de crédito/débito e boleto bancário — tudo processado com segurança pela Nuvemshop.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question">
-            Posso trocar o produto? <span class="faq-icon">+</span>
+            Posso trocar ou devolver um produto? <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Sim! Aceitamos trocas em até 7 dias após o recebimento, desde que o produto esteja sem uso e com a etiqueta original. Entre em contato pelo WhatsApp.</p>
+            <p>Sim! Aceitamos trocas e devoluções em até 7 dias após o recebimento, conforme o Código de Defesa do Consumidor. Entre em contato pelo WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Como acompanho meu pedido? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Após a compra na nossa loja Nuvemshop, você receberá um e-mail com o código de rastreamento assim que o pedido for despachado.</p>
           </div>
         </div>
 
@@ -139,13 +224,15 @@
   <section id="contato">
     <div class="container">
       <h2>Fale Conosco</h2>
-      <p>Dúvidas, pedidos ou sugestões? Estamos aqui para te atender.</p>
+      <p>Dúvidas, pedidos especiais ou sugestões? Estamos aqui para te atender.</p>
       <div class="contact-links">
-        <a href="https://wa.me/5511956852081" target="_blank" rel="noopener">
-          💬 WhatsApp
+        <a href="https://wa.me/5511956852081" target="_blank" rel="noopener" class="contact-link contact-wa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
         </a>
-        <a href="https://instagram.com/usecoelhobr" target="_blank" rel="noopener">
-          📷 @usecoelhobr
+        <a href="https://instagram.com/usecoelhobr" target="_blank" rel="noopener" class="contact-link contact-ig">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @usecoelhobr
         </a>
       </div>
     </div>
@@ -153,31 +240,34 @@
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
-    <p>© 2025 UsecoelhoBr · Todos os direitos reservados.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand footer-brand-name">UsecoelhoBr</span>
+        <p>Moda masculina minimalista premium.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#colecoes">Coleções</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+        <a href="#" class="store-link" aria-label="Ir para a loja">Loja</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://wa.me/5511956852081" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="https://instagram.com/usecoelhobr" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 UsecoelhoBr · Todos os direitos reservados.</p>
+    </div>
   </footer>
 
-  <!-- ===================== CART DRAWER ===================== -->
-  <div class="cart-overlay" id="cart-overlay"></div>
-
-  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras">
-    <div class="cart-header">
-      <h3>Meu Carrinho</h3>
-      <button class="close-cart-btn" id="close-cart-btn" aria-label="Fechar carrinho">✕</button>
-    </div>
-
-    <div class="cart-items" id="cart-items">
-      <p class="cart-empty">Seu carrinho está vazio.</p>
-    </div>
-
-    <div class="cart-footer">
-      <div class="cart-subtotal">
-        <span>Subtotal</span>
-        <span id="cart-subtotal-value">R$ 0,00</span>
-      </div>
-      <a href="checkout.html" class="checkout-link">Finalizar Pedido →</a>
-    </div>
-  </aside>
-
+  <script src="js/config.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
